@@ -1,0 +1,138 @@
+{
+    "calendar": {
+        "title": "calendar",
+        "description": "Coordinate and schedule service appointments"
+    },
+    "camera": {
+        "title": "camera",
+        "description": "In order to use the App normally, we will obtain the camera permission of your device."
+    },
+    "contacts": {
+        "title": "contacts",
+        "description": "Coordinate and schedule service appointments"
+    },
+    "location": {
+        "title": "location",
+        "description": "Get accurate and useful information to support your journey"
+    },
+    "locationAlways": {
+        "title": "location",
+        "description": "Get accurate and useful information to support your journey"
+    },
+    "locationWhenInUse": {
+        "title": "location",
+        "description": "Get accurate and useful information to support your journey"
+    },
+    "mediaLibrary": {
+        "title": "mediaLibrary",
+        "description": "In order to use the App normally, we will obtain the media library permission of your device."
+    },
+    "microphone": {
+        "title": "microphone",
+        "description": "In order to use the App normally, we will obtain the microphone permission of your device."
+    },
+    "phone": {
+        "title": "phone",
+        "description": "In order to use the App normally, we will obtain the phone permission of your device."
+    },
+    "photos": {
+        "title": "photos",
+        "description": "In order to use the App normally, we will obtain the photo permission of your device."
+    },
+    "photosAddOnly": {
+        "title": "photosAddOnly",
+        "description": "In order to use the App normally, we will obtain the photo storage permission of your device."
+    },
+    "reminders": {
+        "title": "reminders",
+        "description": "In order to use the App normally, we will obtain the reminders permission of your device."
+    },
+    "sensors": {
+        "title": "sensors",
+        "description": "In order to use the App normally, we will obtain the sensors permission of your device."
+    },
+    "sms": {
+        "title": "sms",
+        "description": "In order to use the App normally, we will obtain the sms permission of your device."
+    },
+    "speech": {
+        "title": "speech",
+        "description": "In order to use the App normally, we will obtain the speech permission of your device."
+    },
+    "storage": {
+        "title": "storage",
+        "description": "In order to use the App normally, we will obtain the storage permission of your device."
+    },
+    "ignoreBatteryOptimizations": {
+        "title": "ignoreBatteryOptimizations",
+        "description": "In order to use the App normally, we will obtain the ignore battery optimizations permission of your device."
+    },
+    "notification": {
+        "title": "notification",
+        "description": "In order to use the App normally, we will obtain the notification permission of your device."
+    },
+    "accessMediaLocation": {
+        "title": "accessMediaLocation",
+        "description": "In order to use the App normally, we will obtain the access media location permission of your device."
+    },
+    "activityRecognition": {
+        "title": "activityRecognition",
+        "description": "In order to use the App normally, we will obtain the activity recognition permission of your device."
+    },
+    "bluetooth": {
+        "title": "bluetooth",
+        "description": "In order to use the App normally, we will obtain the bluetooth permission of your device."
+    },
+    "manageExternalStorage": {
+        "title": "manageExternalStorage",
+        "description": "In order to use the App normally, we will obtain the manage external storage permission of your device."
+    },
+    "systemAlertWindow": {
+        "title": "systemAlertWindow",
+        "description": "In order to use the App normally, we will obtain the system alert window permission of your device."
+    },
+    "requestInstallPackages": {
+        "title": "requestInstallPackages",
+        "description": "In order to use the App normally, we will obtain the request install packages permission of your device."
+    },
+    "appTrackingTransparency": {
+        "title": "appTrackingTransparency",
+        "description": "In order to use the App normally, we will obtain the app tracking transparency permission of your device."
+    },
+    "criticalAlerts": {
+        "title": "criticalAlerts",
+        "description": "In order to use the App normally, we will obtain the critical alerts permission of your device."
+    },
+    "accessNotificationPolicy": {
+        "title": "accessNotificationPolicy",
+        "description": "In order to use the App normally, we will obtain the access notification policy permission of your device."
+    },
+    "bluetoothScan": {
+        "title": "bluetoothScan",
+        "description": "In order to use the App normally, we will obtain the access bluetooth scan permission of your device."
+    },
+    "bluetoothAdvertise": {
+        "title": "bluetoothAdvertise",
+        "description": "In order to use the App normally, we will obtain the access bluetooth advertise permission of your device."
+    },
+    "bluetoothConnect": {
+        "title": "bluetoothConnect",
+        "description": "In order to use the App normally, we will obtain the access bluetooth connect permission of your device."
+    },
+    "nearbyWifiDevices": {
+        "title": "nearbyWifiDevices",
+        "description": "In order to use the App normally, we will obtain the access nearby Wifi devices permission of your device."
+    },
+    "videos": {
+        "title": "videos",
+        "description": "In order to use the App normally, we will obtain the videos permission of your device."
+    },
+    "audio": {
+        "title": "audio",
+        "description": "In order to use the App normally, we will obtain the audio permission of your device."
+    },
+    "scheduleExactAlarm": {
+        "title": "scheduleExactAlarm",
+        "description": "In order to use the App normally, we will obtain the access schedule exact alarm permission of your device."
+    }
+}

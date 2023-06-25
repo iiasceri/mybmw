@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$splash_animation__340" android:duration="667" android:startOffset="0" android:valueFrom="0.8" android:valueTo="0.8" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$splash_animation__341" android:duration="667" android:startOffset="0" android:valueFrom="0.8" android:valueTo="0.8" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$splash_animation__342" android:duration="333" android:startOffset="667" android:valueFrom="0.8" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$splash_animation__343" android:duration="333" android:startOffset="667" android:valueFrom="0.8" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+</set>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LaunchTheme" parent="@style/Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/NormalTheme</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_animation</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+    </style>
+    <style name="Theme.SplashScreen" parent="@style/Base.Theme.SplashScreen.DayNight">
+        <item name="android:windowSplashScreenBackground">?windowSplashScreenBackground</item>
+        <item name="android:windowSplashScreenAnimatedIcon">?windowSplashScreenAnimatedIcon</item>
+        <item name="android:windowSplashScreenAnimationDuration">?windowSplashScreenAnimationDuration</item>
+    </style>
+    <style name="Theme.SplashScreen.IconBackground" parent="@style/Theme.SplashScreen">
+        <item name="android:windowSplashScreenIconBackgroundColor">?windowSplashScreenIconBackgroundColor</item>
+    </style>
+</resources>

@@ -1,1 +1,1 @@
-adb shell pm path org.jw.jwlibrary.mobile 
+adb shell pm path de.bmw.connected.mobile20.row

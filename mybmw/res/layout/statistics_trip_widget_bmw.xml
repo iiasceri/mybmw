@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view_color_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/image_view_gradient_color_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="155.0">
+        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="16.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="155.0" android:layout_weight="123.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="16.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="16.0">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_view_model" android:layout_width="0.0dip" android:layout_height="fill_parent" android:lines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/text_view_time" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <ImageView android:id="@id/image_view_remaining_power" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitStart" android:layout_weight="42.0" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_view_unit" android:layout_width="fill_parent" android:layout_height="0.0dip" android:lines="1" android:layout_weight="16.0" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0" />
+            <RelativeLayout android:id="@id/progress_bars_mix_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+                <ProgressBar android:id="@id/progress_bar_percent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="41" style="@style/ProgressBarForwardDirectionStyle" />
+                <ProgressBar android:id="@id/progress_bar_percent_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="55" style="@style/ProgressBarOppositeDirectionStyle" />
+            </RelativeLayout>
+            <ImageView android:id="@id/progress_bars_mix_extra_place_holder" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0" />
+            <RelativeLayout android:id="@id/progress_bars_single_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ProgressBar android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ProgressBarSingleBackgroundStyle" />
+            </RelativeLayout>
+            <ImageView android:id="@id/progress_bars_single_extra_place_holder" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="16.0">
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/text_view_trips_count" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <ImageView android:layout_width="2.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/text_view_trips_count_unit" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/text_view_mileage" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <ImageView android:layout_width="2.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/text_view_mileage_unit" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white_60_percent" android:gravity="center_vertical" android:id="@id/text_view_update_time" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="12.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

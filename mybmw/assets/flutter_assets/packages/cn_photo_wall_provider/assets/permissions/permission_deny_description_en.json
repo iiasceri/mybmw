@@ -1,0 +1,26 @@
+{
+  "photos": {
+    "title": "photos",
+    "description": "This allows you to choose a photo from the photo library to share with the app."
+  },
+  "videos": {
+    "title": "videos",
+    "description": "This allows you to choose a video from the photo library to share with the app."
+  },
+  "camera": {
+    "title": "camera",
+    "description": "Customise the app with personal images and use convenient scanning features"
+  },
+  "microphone": {
+    "title": "microphone",
+    "description": "This allows you to take a video to shore with the My BMW App."
+  },
+  "mediaLibrary": {
+    "title": "mediaLibrary",
+    "description": "This allows you to choose a photo from the photo library to share with the app."
+  },
+  "storage": {
+    "title": "storage",
+    "description": "In order to provide you with better quality, content and services which meet your needs, please allow \"My BMW\" to access your storage."
+  }
+}

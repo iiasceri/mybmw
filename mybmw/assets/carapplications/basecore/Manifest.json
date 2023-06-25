@@ -1,0 +1,23 @@
+{
+   "application":{
+      "package":"com.bmwgroup.connected.core.car.hmi",
+      "class":".CarCoreCarApplication",
+      "status":"ACTIVATED",
+      "activities":[
+          ".activity.DetailCarActivity",
+          ".activity.ErrorCarActivity",
+          ".activity.FilterOptionsListCarActivity",
+          ".activity.InputFreetextCarActivity",
+          ".activity.InputSearchCarActivity",
+          ".activity.ListCarActivity0",
+          ".activity.ListCarActivity1",
+          ".activity.ListCarActivity2",
+          ".activity.ListCarActivity3",
+          ".activity.ListCarActivity4",
+          ".activity.PlayerCarActivity",
+          ".activity.BigImageCarActivity",
+          ".activity.PopupCarActivity",
+		  ".activity.PlayerCarActivityId5"
+      ]
+   }
+}

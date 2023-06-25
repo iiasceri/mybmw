@@ -1,0 +1,506 @@
+widget { type { valueString: "eWidgetType_Generate"
+  }
+  prototype { valueString: "eWidgetType_Model"
+  }
+  externalModelValue { key { valueString: "WidgetNameHint" }
+    variant { AsciiString: "G11_ICAM2" }
+  }
+  externalModelValue { key { valueString: "eParam_ModelResourceId" }
+    variant { ResourceId: "scene.ptx" }
+  }
+  externalModelValue { key { valueString: "eParam_ModelRootId" }
+    variant { AsciiString: "" }
+  }
+  externalModelValue { key { valueString: "ShadowOpacity" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "WheelsSteeringValue" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "WheelsRotationValue" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "MirrorL" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "MirrorR" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "DoorL1Open" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "DoorR1Open" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "DoorL2Open" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "DoorR2Open" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "TrunkAOpen" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "TrunkBOpen" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "TireWarningLF" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "TireWarningRF" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "TireWarningLR" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "TireWarningRR" }
+    variant { Numeric { Float: 0 } }
+  }
+  externalModelValue { key { valueString: "TireColorLF" }
+    variant { Numeric { Vec3f { x: 1
+          y: 0
+          z: 0 } } }
+  }
+  externalModelValue { key { valueString: "TireColorRF" }
+    variant { Numeric { Vec3f { x: 1
+          y: 0
+          z: 0 } } }
+  }
+  externalModelValue { key { valueString: "TireColorLR" }
+    variant { Numeric { Vec3f { x: 1
+          y: 0
+          z: 0 } } }
+  }
+  externalModelValue { key { valueString: "TireColorRR" }
+    variant { Numeric { Vec3f { x: 1
+          y: 0
+          z: 0 } } }
+  }
+  internalModelValue { key { valueString: "TireRotation_MDL.output" }
+    binding { provider { operation { operator: TEOperatorType_Mul
+          dataType: TEDataType_Float
+          dataType: TEDataType_Float
+          operand { key { valueString: "WheelsRotationValue" }
+            provider { source: TEProviderSource_ExtModelValue } }
+          operand { provider { variant { Numeric { Float: -360 } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF|tireLF__MCOS_1|tireLF__MCOS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF|tireLF__MCOS_1|tireLF__MCOS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorLF" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningLF" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF|tireLF__MCP2_1|tireLF__MCP2_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF|tireLF__MCP2_1|tireLF__MCP2_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorLF" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningLF" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF|tireLF__MLGS_1|tireLF__MLGS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF|tireLF__MLGS_1|tireLF__MLGS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorLF" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningLF" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB|tireLB__MCOS_1|tireLB__MCOS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB|tireLB__MCOS_1|tireLB__MCOS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorLR" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningLR" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB|tireLB__MCP2_1|tireLB__MCP2_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB|tireLB__MCP2_1|tireLB__MCP2_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorLR" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningLR" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB|tireLB__MLGS_1|tireLB__MLGS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB|tireLB__MLGS_1|tireLB__MLGS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorLR" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningLR" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF|tireRF__MCOS_1|tireRF__MCOS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF|tireRF__MCOS_1|tireRF__MCOS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorRF" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningRF" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF|tireRF__MCP2_1|tireRF__MCP2_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF|tireRF__MCP2_1|tireRF__MCP2_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorRF" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningRF" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF|tireRF__MLGS_1|tireRF__MLGS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF|tireRF__MLGS_1|tireRF__MLGS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorRF" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningRF" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB|tireRB__MCOS_1|tireRB__MCOS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB|tireRB__MCOS_1|tireRB__MCOS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorRR" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningRR" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB|tireRB__MCP2_1|tireRB__MCP2_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB|tireRB__MCP2_1|tireRB__MCP2_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorRR" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningRR" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB|tireRB__MLGS_1|tireRB__MLGS_1Shape" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB|tireRB__MLGS_1|tireRB__MLGS_1Shape" } } }
+    uniform { name { provider { variant { AsciiString: "u_RimColor" } } }
+      value { key { valueString: "TireColorRR" }
+        provider { source: TEProviderSource_ExtModelValue
+          operation { operator: TEOperatorType_MuxVec2
+            dataType: TEDataType_Float
+            dataType: TEDataType_Float
+            operand { provider { variant { Numeric { Float: 0 } } } }
+            operand { key { valueString: "TireWarningRR" }
+              provider { source: TEProviderSource_ExtModelValue } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_RIGHT" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_RIGHT" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { provider { operation { operator: TEOperatorType_Mul
+                              dataType: TEDataType_Float
+                              dataType: TEDataType_Float
+                              operand { key { valueString: "DoorR1Open" }
+                                provider { source: TEProviderSource_ExtModelValue } }
+                              operand { provider { variant { Numeric { Float: 65 } } } } } } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0.10471976 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { key { valueString: "WheelsSteeringValue" }
+                          provider { source: TEProviderSource_ExtModelValue } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0.10471976 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { key { valueString: "WheelsSteeringValue" }
+                          provider { source: TEProviderSource_ExtModelValue } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_RIGHT|DOOR1_RIGHT_MIRROR" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_RIGHT|DOOR1_RIGHT_MIRROR" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { provider { operation { operator: TEOperatorType_Mul
+                              dataType: TEDataType_Float
+                              dataType: TEDataType_Float
+                              operand { key { valueString: "MirrorR" }
+                                provider { source: TEProviderSource_ExtModelValue } }
+                              operand { provider { variant { Numeric { Float: -65 } } } } } } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_LEFT|DOOR1_LEFT_MIRROR" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_LEFT|DOOR1_LEFT_MIRROR" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { provider { operation { operator: TEOperatorType_Mul
+                              dataType: TEDataType_Float
+                              dataType: TEDataType_Float
+                              operand { key { valueString: "MirrorL" }
+                                provider { source: TEProviderSource_ExtModelValue } }
+                              operand { provider { variant { Numeric { Float: 65 } } } } } } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR2_RIGHT" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR2_RIGHT" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { provider { operation { operator: TEOperatorType_Mul
+                              dataType: TEDataType_Float
+                              dataType: TEDataType_Float
+                              operand { key { valueString: "DoorR2Open" }
+                                provider { source: TEProviderSource_ExtModelValue } }
+                              operand { provider { variant { Numeric { Float: 65 } } } } } } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR2_LEFT" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR2_LEFT" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { provider { operation { operator: TEOperatorType_Mul
+                              dataType: TEDataType_Float
+                              dataType: TEDataType_Float
+                              operand { key { valueString: "DoorL2Open" }
+                                provider { source: TEProviderSource_ExtModelValue } }
+                              operand { provider { variant { Numeric { Float: -65 } } } } } } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|TRUNK_A" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|TRUNK_A" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { provider { operation { operator: TEOperatorType_Mul
+                              dataType: TEDataType_Float
+                              dataType: TEDataType_Float
+                              operand { key { valueString: "TrunkAOpen" }
+                                provider { source: TEProviderSource_ExtModelValue } }
+                              operand { provider { variant { Numeric { Float: -65 } } } } } } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_LEFT" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL2|CHASSIS|DOOR1_LEFT" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { provider { operation { operator: TEOperatorType_Mul
+                              dataType: TEDataType_Float
+                              dataType: TEDataType_Float
+                              operand { key { valueString: "DoorL1Open" }
+                                provider { source: TEProviderSource_ExtModelValue } }
+                              operand { provider { variant { Numeric { Float: -65 } } } } } } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RB" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { key { valueString: "TireRotation_MDL.output" }
+                          provider { source: TEProviderSource_IntModelValue } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LB" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { key { valueString: "TireRotation_MDL.output" }
+                          provider { source: TEProviderSource_IntModelValue } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_RF_NUL|WHEEL_RF" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { key { valueString: "TireRotation_MDL.output" }
+                          provider { source: TEProviderSource_IntModelValue } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } } } } } } } } }
+  }
+  nodeParam { identifier { valueString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF" }
+    node { provider { variant { AsciiString: "|GROUND_LOCATOR|CAD_ROOT|RL1|WHEELS|WHEEL_LF_NUL|WHEEL_LF" } } }
+    transform { rotation { provider { operation { operator: TEOperatorType_Mul
+            dataType: TEDataType_Float
+            dataType: TEDataType_Vec3
+            operand { provider { variant { Numeric { Float: 57.295776 } } } }
+            operand { provider { operation { operator: TEOperatorType_MuxVec3
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  dataType: TEDataType_Float
+                  operand { provider { variant { Numeric { Float: 0 } } } }
+                  operand { provider { operation { operator: TEOperatorType_Mul
+                        dataType: TEDataType_Float
+                        dataType: TEDataType_Float
+                        operand { key { valueString: "TireRotation_MDL.output" }
+                          provider { source: TEProviderSource_IntModelValue } }
+                        operand { provider { variant { Numeric { Float: 0.017453292 } } } } } } }
+                  operand { provider { variant { Numeric { Float: 0 } } } } } } } } } } } }
+}
+

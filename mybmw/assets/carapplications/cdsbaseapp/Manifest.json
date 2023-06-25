@@ -1,0 +1,9 @@
+{
+  "application": {
+    "package": "com.bmwgroup.carconnection.a4a",
+    "class": ".CarConnectionApplication",
+    "main": "com.bmwgroup.carconnection.a4a.MAIN",
+    "status": "ACTIVATED",
+    "activities": []
+  }
+}

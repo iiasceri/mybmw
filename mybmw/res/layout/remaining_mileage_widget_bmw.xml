@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view_color_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/image_view_gradient_color_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="155.0">
+        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="16.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="155.0" android:layout_weight="123.0">
+            <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="16.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_view_model" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:lines="1" android:includeFontPadding="false" android:layout_weight="16.0" />
+            <ImageView android:id="@id/image_view_remaining_mileage" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitStart" android:layout_weight="42.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="5.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="139.0" android:layout_weight="20.0">
+                <ImageView android:id="@id/image_fuel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="4.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_view_remaining_fuel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="4.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_remaining_mileage_webp" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="139.0" android:layout_weight="20.0">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/image_electric_webp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="9.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_view_remaining_electricity_webp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_remaining_mileage_ttf" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="139.0" android:layout_weight="20.0">
+                <ImageView android:id="@id/image_electric_ttf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="4.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_view_remaining_electricity_ttf" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="4.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white_60_percent" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_view_update_time" android:layout_width="fill_parent" android:layout_height="0.0dip" android:lines="1" android:includeFontPadding="false" android:layout_weight="12.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
